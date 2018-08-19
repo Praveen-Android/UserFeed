@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:minHeight="150dp"
+    tools:ignore="ContentDescription">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/feed_photo"
+            android:layout_width="@dimen/layout_dimen_0"
+            android:layout_height="@dimen/layout_dimen_0"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="H,4:4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:color/darker_gray"
+            android:focusable="true" />
+
+        <ImageButton
+            android:id="@+id/fav_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_dimen_8"
+            android:padding="@dimen/layout_dimen_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feed_photo" />
+
+        <TextView
+            android:id="@+id/fav_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_dimen_5"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="@dimen/layout_dimen_20"
+            android:paddingTop="@dimen/layout_dimen_20"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/layout_text_dimen_14"
+            app:layout_constraintBottom_toBottomOf="@+id/fav_button"
+            app:layout_constraintStart_toEndOf="@id/fav_button"
+            app:layout_constraintTop_toTopOf="@+id/fav_button" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

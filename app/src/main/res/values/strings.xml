@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UserFeed</string>
+    <string name="login_text">Please login to view the feed</string>
+    <string name="menu_login">login</string>
+    <string name="menu_logout">logout</string>
+    <string name="photo_like_text">Like</string>
+    <string name="photo_detail_title">Photo</string>
+    <string name="selection_update_error">Error updating favorite. Please try again.</string>
+    <string name="feed_title">Feed</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/layout_dimen_10">
+
+    <ImageView
+        android:id="@+id/profile_picture_view"
+        android:layout_width="@dimen/menu_item_size"
+        android:layout_height="@dimen/menu_item_size"
+        android:layout_gravity="center"
+        android:paddingEnd="@dimen/layout_dimen_5"
+        android:paddingStart="@dimen/layout_dimen_5"
+        android:contentDescription="@string/menu_logout" />
+
+</FrameLayout>

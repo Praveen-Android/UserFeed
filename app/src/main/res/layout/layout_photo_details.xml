@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/photo_fav_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_dimen_16"
+        android:layout_marginTop="@dimen/layout_dimen_10"
+        android:padding="@dimen/layout_dimen_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/photo_view" />
+
+    <TextView
+        android:id="@+id/photo_fav_count_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_dimen_14"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="@dimen/layout_dimen_16"
+        android:layout_marginStart="@dimen/layout_dimen_5"
+        android:paddingTop="@dimen/layout_dimen_10"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/layout_text_dimen_18"
+        app:layout_constraintStart_toEndOf="@id/photo_fav_button"
+        app:layout_constraintTop_toBottomOf="@id/photo_view" />
+
+    <TextView
+        android:id="@+id/creation_date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_dimen_16"
+        android:paddingTop="10dp"
+        android:paddingBottom="@dimen/layout_dimen_16"
+        android:textSize="@dimen/layout_text_dimen_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/photo_fav_count_view"
+        app:layout_constraintTop_toBottomOf="@+id/photo_view" />
+
+</android.support.constraint.ConstraintLayout>
