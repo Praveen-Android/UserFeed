@@ -145,8 +145,12 @@ class UserFeedFragment: Fragment(), PhotoListener {
         activity?.invalidateOptionsMenu()
         when(requestCode){
             LOGIN_REQUEST_CODE -> {
-                showUserFeedView()
-                mViewModel.fetchUserFeed()
+                if(mViewModel.getAuthorizationToken() == null){
+                    showLoginView()
+                } else {
+                    showUserFeedView()
+                    mViewModel.fetchUserFeed()
+                }
             }
             LOGOUT_REQUEST_CODE -> {
                 showLoginView()
